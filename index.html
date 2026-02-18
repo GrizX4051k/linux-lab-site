@@ -207,6 +207,56 @@
         <span class="cursor"></span>
       </div>
     </section>
+    <section class="contact-feedback">
+  <div class="contact-card">
+    <h2>Contact / Feedback</h2>
+    <p class="contact-text">
+      Found a bug, have feedback, or want to say hi? Reach out or open an issue.
+    </p>
+
+    <div class="contact-actions">
+      <a href="mailto:money4051k@gmail.com" class="contact-pill">
+        Email me
+      </a>
+      <a href="https://github.com/GrizX4051k/linux-lab-site/issues"
+         class="contact-pill"
+         target="_blank"
+         rel="noreferrer">
+        GitHub issue
+      </a>
+    </div>
+
+    <form
+      class="feedback-form"
+      action="https://formspree.io/f/xjgeopab"
+      method="POST"
+    >
+      <label class="feedback-label">
+        Your message (feedback, ideas, bugs)
+        <textarea
+          name="message"
+          rows="3"
+          placeholder="Share anything that can make this Linux Lab better..."
+          required
+        ></textarea>
+      </label>
+
+      <label class="feedback-label">
+        Optional email (if you want a reply)
+        <input
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+        />
+      </label>
+
+      <button type="submit" class="feedback-button">
+        Send feedback
+      </button>
+    </form>
+  </div>
+</section>
+
   </main>
 
   <script src="main.js"></script>
