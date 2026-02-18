@@ -60,7 +60,7 @@ body {
     position: relative;
     max-width: 960px;
     margin: 40px auto;
-    border-radius: 14px;
+    border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
     border: 1px solid rgba(148, 163, 184, 0.4);
