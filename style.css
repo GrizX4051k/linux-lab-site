@@ -59,7 +59,7 @@ body {
 .shell {
     position: relative;
     max-width: 960px;
-    margin: 40px auto;
+    margin: 60px auto;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
@@ -223,6 +223,10 @@ body {
     color: var(--accent-2);
 }
 .contact-feedback {
+    background: radial-gradient(circle at top left,
+            #02081f 0,
+            #020617 40%,
+            #000 100%);
   position: relative;
   z-index: 1;
   max-width: 900px;
