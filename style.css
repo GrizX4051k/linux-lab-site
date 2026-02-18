@@ -1,0 +1,254 @@
+:root {
+  --bg: #020617;
+  --bg-alt: #02081f;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22c55e;
+  --accent-2: #38bdf8;
+  --danger: #f97373;
+  --border: #1f2937;
+  --panel: rgba(15, 23, 42, 0.95);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background: radial-gradient(circle at top, #020617 0, #000 60%);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* binary background */
+
+.binary-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+      0deg,
+      rgba(34, 197, 94, 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(34, 197, 94, 0.09) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+  opacity: 0.5;
+}
+
+.shell {
+  position: relative;
+  max-width: 960px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* header */
+
+.shell-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: linear-gradient(to bottom, #020617, #02081f);
+  border-bottom: 1px solid #111827;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background: #f97373;
+}
+
+.dot-yellow {
+  background: #facc15;
+}
+
+.dot-green {
+  background: #22c55e;
+}
+
+.shell-title {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.shell-title .path {
+  color: var(--accent-2);
+}
+
+/* body */
+
+.shell-body {
+  background: radial-gradient(circle at top left, #02081f 0, #020617 40%, #000 100%);
+  padding: 18px 18px 20px;
+}
+
+.line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+.cmd {
+  color: var(--text);
+}
+
+.ascii {
+  margin: 10px 0 14px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  color: #bbf7d0;
+  font-size: 0.8rem;
+  overflow-x: auto;
+}
+
+/* blocks */
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 12px 0 18px;
+}
+
+.block {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.9);
+}
+
+.block h2 {
+  margin: 0 0 6px;
+  color: var(--accent-2);
+  font-size: 0.98rem;
+}
+
+.block ul {
+  margin: 0 0 6px 16px;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.link {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* logs */
+
+.logs {
+  margin: 12px 0 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px dashed var(--border);
+  font-size: 0.85rem;
+}
+
+.logs h2 {
+  margin: 0 0 6px;
+  color: var(--accent-2);
+}
+
+.logs ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+.logs li {
+  margin-bottom: 4px;
+}
+
+/* summary */
+
+.summary {
+  margin: 10px 0 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.summary a {
+  color: var(--accent-2);
+}
+
+/* blinking cursor */
+
+.cursor-line {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 9px;
+  height: 1.1rem;
+  background: var(--accent);
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    margin: 16px 10px;
+  }
+
+  .shell-body {
+    padding: 14px 12px 16px;
+  }
+}
