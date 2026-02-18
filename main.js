@@ -24,7 +24,7 @@ const overlay = document.querySelector(".matrix-overlay");
 const template = document.querySelector(".matrix-stream");
 if (!overlay || !template) return;
 
-const STREAM_COUNT = 220;   // adjust up/down for density
+const STREAM_COUNT = 180;   // adjust up/down for density
 const MAX_LINES = 100;
 
 template.remove();
