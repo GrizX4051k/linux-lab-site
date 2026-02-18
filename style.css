@@ -308,14 +308,24 @@ body {
 }
 
 .matrix-stream {
-    position: absolute;
-    top: -150%;
-    width: 1.5rem;
-    color: #22c55e;
-    font-size: 0.8rem;
-    opacity: 0.25;
-    animation: fall 6s linear infinite;
-    white-space: pre;
+  position: absolute;
+  top: -120%;
+  width: 2.4rem;               /* wider columns */
+  color: #22c55e;
+  font-size: 0.9rem;
+  opacity: 0.55;               /* more visible */
+  animation: fall 5s linear infinite;
+  white-space: pre;
+}
+.binary-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(0deg, rgba(34, 197, 94, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 197, 94, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.35;              /* lower opacity */
 }
 
 .matrix-stream:nth-child(1) {

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linux Lab | GrizX4051k</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Lab | GrizX4051k</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="binary-bg"></div>
-      <div class="matrix-overlay">
-                <div class="matrix-stream" data-text="MANISH"></div>
-                <div class="matrix-stream" data-text="LINUX"></div>
-                <div class="matrix-stream" data-text="GRIZX4051K"></div>
-            </div>
+  <!-- background grid + matrix overlay -->
+  <div class="binary-bg"></div>
+  <div class="matrix-overlay">
+    <div class="matrix-stream" data-text="MANISH"></div>
+    <div class="matrix-stream" data-text="LINUX"></div>
+    <div class="matrix-stream" data-text="GRIZX4051K"></div>
+  </div>
 
-    <main class="shell">
-        <header class="shell-header">
-            <div class="dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-            </div>
-            <div class="shell-title">
-                manish@linux-lab: <span class="path">~/projects/linux-lab</span>
-            </div>
-        </header>
+  <main class="shell">
+    <header class="shell-header">
+      <div class="dots">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <div class="shell-title">
+        manish@linux-lab: <span class="path">~/projects/linux-lab</span>
+      </div>
+    </header>
 
-        <section class="shell-body">
-            <div class="line">
-                <span class="prompt">manish@linux-lab:~$</span>
-                <span class="cmd">neofetch</span>
-            </div>
-            <pre class="ascii">
+    <section class="shell-body">
+      <!-- intro -->
+      <div class="line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cmd">neofetch</span>
+      </div>
+
+      <pre class="ascii">
    ___      _                 _       
   / _ \ ___| | ___  _   _  __| |_  _  
  | | | / __| |/ _ \| | | |/ _` | || | 
@@ -48,142 +50,140 @@
       by Manish (@GrizX4051k)
       </pre>
 
-            <div class="line">
-                <span class="prompt">manish@linux-lab:~$</span>
-                <span class="cmd">cat ROADMAP.md</span>
-            </div>
+      <!-- roadmap blocks -->
+      <div class="line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cmd">cat ROADMAP.md</span>
+      </div>
 
-            <section class="blocks">
-                <article class="block">
-                    <h2>[ Beginner ]</h2>
-                    <ul>
-                        <li>File management, filesystem & permissions</li>
-                        <li>System info, users, processes</li>
-                        <li>Archiving, transfer, package managers</li>
-                    </ul>
-                    <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner"
-                        target="_blank" rel="noreferrer">
-                        ➜ view beginner notes & practice
-                    </a>
+      <section class="blocks">
+        <article class="block">
+          <h2>[ Beginner ]</h2>
+          <ul>
+            <li>File management, filesystem & permissions</li>
+            <li>System info, users, processes</li>
+            <li>Archiving, transfer, package managers</li>
+          </ul>
+          <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner"
+             target="_blank" rel="noreferrer">
+            ➜ view beginner notes & practice
+          </a>
+        </article>
 
-                </article>
+        <article class="block">
+          <h2>[ Intermediate ]</h2>
+          <ul>
+            <li>Networking, SSH, firewalls</li>
+            <li>systemd services & logs</li>
+            <li>Text processing, cron, tmux</li>
+          </ul>
+          <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/intermediate"
+             target="_blank" rel="noreferrer">
+            ➜ view intermediate topics
+          </a>
+        </article>
 
-                <article class="block">
-                    <h2>[ Intermediate ]</h2>
-                    <ul>
-                        <li>Networking, SSH, firewalls</li>
-                        <li>systemd services & logs</li>
-                        <li>Text processing, cron, tmux</li>
-                    </ul>
-                    <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/intermediate"
-                        target="_blank" rel="noreferrer">
-                        ➜ view intermediate topics
-                    </a>
-                </article>
+        <article class="block">
+          <h2>[ Advanced ]</h2>
+          <ul>
+            <li>Kernel tuning & performance tools</li>
+            <li>Filesystems, RAID, LVM</li>
+            <li>Containers, virtualization & security</li>
+          </ul>
+          <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/advanced"
+             target="_blank" rel="noreferrer">
+            ➜ view advanced roadmap
+          </a>
+        </article>
+      </section>
 
-                <article class="block">
-                    <h2>[ Advanced ]</h2>
-                    <ul>
-                        <li>Kernel tuning & performance tools</li>
-                        <li>Filesystems, RAID, LVM</li>
-                        <li>Containers, virtualization & security</li>
-                    </ul>
-                    <a class="link" href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/advanced"
-                        target="_blank" rel="noreferrer">
-                        ➜ view advanced roadmap
-                    </a>
-                </article>
-            </section>
+      <!-- logs -->
+      <div class="line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cmd">ls logs/</span>
+      </div>
 
-            <div class="line">
-                <span class="prompt">manish@linux-lab:~$</span>
-                <span class="cmd">ls logs/</span>
-            </div>
+      <section class="logs">
+        <h2>▶ Session Logs (real terminal history)</h2>
+        <p>Each log is captured with <code>script</code> while I practice commands on Ubuntu.</p>
+        <ul>
+          <li>✅ Beginner 01 – File Management:
+            <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner/01-file-management"
+               target="_blank" rel="noreferrer">
+              view session logs
+            </a>
+          </li>
+          <li>✅ Beginner 02 – Filesystem & Permissions:
+            <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner/02-filesystem-permissions"
+               target="_blank" rel="noreferrer">
+              view session logs
+            </a>
+          </li>
+          <li>…more topics will be added as I complete them.</li>
+        </ul>
+      </section>
 
-            <section class="logs">
-                <h2>▶ Session Logs (real terminal history)</h2>
-                <p>Each log is captured with <code>script</code> while I practice commands on Ubuntu.</p>
-                <ul>
-                    <li>✅ Beginner 01 – File Management:
-                        <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner/01-file-management"
-                            target="_blank" rel="noreferrer">
-                            view session logs
-                        </a>
-                    </li>
+      <!-- progress -->
+      <div class="line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cmd">cat PROGRESS.txt</span>
+      </div>
 
-                    <li>✅ Beginner 02 – Filesystem & Permissions:
-                        <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab/beginner/02-filesystem-permissions"
-                            target="_blank" rel="noreferrer">
-                            view session logs
-                        </a>
-                    </li>
-                    <li>…more topics will be added as I complete them.</li>
-                </ul>
-            </section>
+      <section class="progress">
+        <h2>▌ Learning Progress (Sessions)</h2>
+        <div class="progress-row">
+          <span class="label">Beginner</span>
+          <div class="bar">
+            <div class="bar-fill bar-beginner"></div>
+          </div>
+          <span class="percent" id="beginner-percent">0%</span>
+        </div>
+        <div class="progress-row">
+          <span class="label">Intermediate</span>
+          <div class="bar">
+            <div class="bar-fill bar-intermediate"></div>
+          </div>
+          <span class="percent" id="intermediate-percent">0%</span>
+        </div>
+        <div class="progress-row">
+          <span class="label">Advanced</span>
+          <div class="bar">
+            <div class="bar-fill bar-advanced"></div>
+          </div>
+          <span class="percent" id="advanced-percent">0%</span>
+        </div>
+        <p class="progress-note">
+          Percentages are based on completed topics/logs. I update them as I finish each section.
+        </p>
+      </section>
 
-            <div class="line">
-                <span class="prompt">manish@linux-lab:~$</span>
-                <span class="cmd">cat PROGRESS.txt</span>
-            </div>
+      <!-- summary -->
+      <div class="line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cmd">sumfetch</span>
+      </div>
 
-            <section class="progress">
-                <h2>▌ Learning Progress (Sessions)</h2>
-                <div class="progress-row">
-                    <span class="label">Beginner</span>
-                    <div class="bar">
-                        <div class="bar-fill bar-beginner"></div>
-                    </div>
-                    <span class="percent" id="beginner-percent">0%</span>
-                </div>
-                <div class="progress-row">
-                    <span class="label">Intermediate</span>
-                    <div class="bar">
-                        <div class="bar-fill bar-intermediate"></div>
-                    </div>
-                    <span class="percent" id="intermediate-percent">0%</span>
-                </div>
-                <div class="progress-row">
-                    <span class="label">Advanced</span>
-                    <div class="bar">
-                        <div class="bar-fill bar-advanced"></div>
-                    </div>
-                    <span class="percent" id="advanced-percent">0%</span>
-                </div>
-                <p class="progress-note">
-                    Percentages are based on completed topics/logs. I update them as I finish each section.
-                </p>
-            </section>
+      <section class="summary">
+        <p>
+          I’m a web & mobile developer leveling up as a Linux‑first engineer —
+          learning the command line, system internals, and security fundamentals,
+          one session at a time.
+        </p>
+        <p>
+          Source code & notes:
+          <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab" target="_blank" rel="noreferrer">
+            github.com/GrizX4051k/linux-lab
+          </a>
+        </p>
+      </section>
 
-            <div class="line">
-                <span class="prompt">manish@linux-lab:~$</span>
-                <span class="cmd">ls logs/</span>
-            </div>
+      <div class="cursor-line">
+        <span class="prompt">manish@linux-lab:~$</span>
+        <span class="cursor"></span>
+      </div>
+    </section>
+  </main>
 
-            <section class="logs">
-
-
-                <section class="summary">
-                    <p>
-                        I’m a web & mobile developer leveling up as a Linux‑first engineer —
-                        learning the command line, system internals, and security fundamentals,
-                        one session at a time.
-                    </p>
-                    <p>
-                        Source code & notes:
-                        <a href="https://github.com/GrizX4051k/LINUX/tree/main/linux-lab" target="_blank" rel="noreferrer">
-                            github.com/GrizX4051k/linux-lab
-                        </a>
-                    </p>
-                </section>
-
-                <div class="cursor-line">
-                    <span class="prompt">manish@linux-lab:~$</span>
-                    <span class="cursor"></span>
-                </div>
-            </section>
-    </main>
-
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>
