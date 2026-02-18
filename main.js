@@ -80,5 +80,4 @@ for (let i = 0; i < STREAM_COUNT; i++) {
   requestAnimationFrame(tick({ time: performance.now() }));
 }
 
-
 });
