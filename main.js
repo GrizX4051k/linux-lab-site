@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Linux Lab loaded.");
 
-  // === EDIT THESE NUMBERS AS YOU PROGRESS ===
-  const beginner = 20;      // e.g. 20% of beginner roadmap done
-  const intermediate = 0;   // set later
-  const advanced = 0;       // set later
-  // ==========================================
+  // progress values – you can still edit if you want
+  const beginner = 20;
+  const intermediate = 0;
+  const advanced = 0;
 
   function setProgress(idBar, idText, value) {
     const bar = document.querySelector(idBar);
@@ -19,4 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   setProgress(".bar-beginner", "#beginner-percent", beginner);
   setProgress(".bar-intermediate", "#intermediate-percent", intermediate);
   setProgress(".bar-advanced", "#advanced-percent", advanced);
+
+  // matrix streams
+  const streams = document.querySelectorAll(".matrix-stream");
+  streams.forEach((stream) => {
+    const label = (stream.dataset.text || "LINUX").toUpperCase();
+    const chars = [];
+    for (let i = 0; i < 80; i++) {
+      if (i % 10 === 0) {
+        chars.push("\n" + label);
+      } else {
+        chars.push(Math.random() > 0.5 ? "0" : "1");
+      }
+    }
+    stream.textContent = chars.join("");
+  });
 });
