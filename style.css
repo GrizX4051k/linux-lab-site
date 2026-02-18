@@ -29,6 +29,19 @@ body {
     color: var(--text);
     overflow-x: hidden;
 }
+.main-card {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #050810;          /* slightly lighter than page bg */
+  border-radius: 1rem;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.9),
+    0 0 40px rgba(0, 255, 120, 0.05); /* subtle green glow */
+  color: #e5f7ee;               /* high contrast text */
+}
 
 /* binary background */
 
@@ -298,25 +311,6 @@ body {
     font-size: 0.76rem;
     color: var(--muted);
 }
-
-.matrix-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.matrix-stream {
-  position: absolute;
-  top: -120%;
-  width: 2.4rem;               /* wider columns */
-  color: #22c55e;
-  font-size: 0.9rem;
-  opacity: 0.55;               /* more visible */
-  animation: fall 5s linear infinite;
-  white-space: pre;
-}
 .binary-bg {
   position: fixed;
   inset: 0;
@@ -327,37 +321,43 @@ body {
   background-size: 40px 40px;
   opacity: 0.35;              /* lower opacity */
 }
-
-.matrix-stream:nth-child(1) {
-    left: 12%;
-    animation-duration: 7s;
+.matrix-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.matrix-stream:nth-child(2) {
-    left: 48%;
-    animation-duration: 6s;
+/* each stream is a vertical column */
+.matrix-stream {
+  position: absolute;
+  width: 1rem;
+  color: #22c55e;
+  opacity: 0.85;
+  white-space: pre;
 }
 
-.matrix-stream:nth-child(3) {
-    left: 78%;
-    animation-duration: 8s;
-}
 
+
+/* make it fall far past the bottom so it never "stops" in view */
 @keyframes fall {
-    0% {
-        transform: translateY(0);
-        opacity: 0.1;
-    }
-
-    30% {
-        opacity: 0.4;
-    }
-
-    100% {
-        transform: translateY(200%);
-        opacity: 0.1;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(260%);  /* way beyond bottom */
+    opacity: 0.2;
+  }
 }
+
 
 .shell {
     position: relative;
