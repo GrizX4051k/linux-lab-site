@@ -53,22 +53,6 @@ If you’re curious how I work in Linux day‑to‑day, this is the best place t
 
 ---
 
-## What’s inside
-
-> Folder names may change over time as I add more labs, but the idea stays the same.
-
-| Area / Section                         | Focus                          | Highlights                                                  |
-|----------------------------------------|--------------------------------|-------------------------------------------------------------|
-| `index.html` / `styles` / `scripts`    | Frontend for the lab site      | Terminal‑inspired theme, responsive layout, clean UX        |
-| `logs/`                                | Raw command logs               | Recorded with `script`, grouped by topic and date           |
-| `topics/` or `notes/`                  | Human‑readable notes           | Summaries of what I learned in each session                 |
-| `assets/`                              | Icons, fonts, background FX    | Visual polish for the lab UI                                |
-| `config/` (if present)                 | Site config, links, metadata   | Quick way to wire new topics into the UI                    |
-
-The live site shows **progress** per topic based on how many logs/sections I’ve completed.
-
----
-
 ## How I run the lab site locally
 
 This is a static site (HTML/CSS/JS), so running it locally is simple.
